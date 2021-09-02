@@ -1,4 +1,4 @@
-FROM maven:3.6.3-jdk-8-slim AS build
+FROM maven:3.8-ibmjava-8-alpine AS build
 WORKDIR /home/app
 COPY . /home/app
 RUN mvn -f /home/app/pom.xml clean package
